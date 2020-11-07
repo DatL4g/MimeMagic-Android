@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/file_standalone_header"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textMime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textHeader"/>
+
+    <CheckBox
+        android:id="@+id/textArchive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Archive"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textMime" />
+
+    <CheckBox
+        android:id="@+id/textAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Audio"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textArchive" />
+
+    <CheckBox
+        android:id="@+id/textDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Document"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textAudio" />
+
+    <CheckBox
+        android:id="@+id/textFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Font"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textDocument" />
+
+    <CheckBox
+        android:id="@+id/textImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Image"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textFont" />
+
+    <CheckBox
+        android:id="@+id/textText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Text"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textImage" />
+
+    <CheckBox
+        android:id="@+id/textVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is Video"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@id/textText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

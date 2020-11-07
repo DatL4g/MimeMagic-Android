@@ -1,0 +1,3 @@
+include ':mimemagic'
+include ':app'
+rootProject.name = "MimeMagicExample"

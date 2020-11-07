@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">MimeMagicExample</string>
+  <string name="choose_file">Choose File</string>
+  <string name="file_standalone_header">File - Standalone</string>
+  <string name="file_fallback_header">File - Fallback</string>
+  <string name="inputstream_header">InputStream</string>
+  <string name="uri_header">Uri</string>
+  <string name="name_header">Name</string>
+</resources>
