@@ -6,7 +6,7 @@ import de.datlag.mimemagic.MimeData
 import java.io.File
 
 @JvmOverloads
-fun File.getMimeData(context: Context? = null): MimeData? {
+fun File.getMimeData(context: Context? = null): MimeData {
     return if (context == null) {
         MimeData.fromFile(this)
     } else {
@@ -14,6 +14,6 @@ fun File.getMimeData(context: Context? = null): MimeData? {
     }
 }
 
-fun File.getMimeData(contentResolver: ContentResolver): MimeData? {
+fun File.getMimeData(contentResolver: ContentResolver): MimeData {
     return MimeData.fromFile(this, contentResolver)
 }
