@@ -1,9 +1,11 @@
 <resources>
   <string name="app_name">MimeMagicExample</string>
   <string name="choose_file">Choose File</string>
-  <string name="file_standalone_header">File - Standalone</string>
-  <string name="file_fallback_header">File - Fallback</string>
-  <string name="inputstream_header">InputStream</string>
-  <string name="uri_header">Uri</string>
-  <string name="name_header">Name</string>
+  <string name="is_archive">is Archive</string>
+  <string name="is_audio">is Audio</string>
+  <string name="is_document">is Document</string>
+  <string name="is_font">is Font</string>
+  <string name="is_image">is Image</string>
+  <string name="is_text">is Text</string>
+  <string name="is_video">is Video</string>
 </resources>

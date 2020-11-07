@@ -8,7 +8,6 @@
         android:id="@+id/textHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/file_standalone_header"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_marginTop="16dp"
@@ -25,7 +24,7 @@
         android:id="@+id/textArchive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Archive"
+        android:text="@string/is_archive"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textMime" />
 
@@ -33,7 +32,7 @@
         android:id="@+id/textAudio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Audio"
+        android:text="@string/is_audio"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textArchive" />
 
@@ -41,7 +40,7 @@
         android:id="@+id/textDocument"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Document"
+        android:text="@string/is_document"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textAudio" />
 
@@ -49,7 +48,7 @@
         android:id="@+id/textFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Font"
+        android:text="@string/is_font"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textDocument" />
 
@@ -57,7 +56,7 @@
         android:id="@+id/textImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Image"
+        android:text="@string/is_image"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textFont" />
 
@@ -65,7 +64,7 @@
         android:id="@+id/textText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Text"
+        android:text="@string/is_text"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textImage" />
 
@@ -73,7 +72,7 @@
         android:id="@+id/textVideo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="is Video"
+        android:text="@string/is_video"
         android:clickable="false"
         app:layout_constraintTop_toBottomOf="@id/textText" />
 
