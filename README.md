@@ -35,19 +35,19 @@ dependencies {
 
 ## Usage
 Create MimeData Object using this static functions:
-* ```fun fromFile(file: File)```
-* ```fun fromFile(file: File, context: Context)```
-* ```fun fromFile(file: File, contentResolver: ContentResolver)```
-* ```fun fromByteArray(byteArray: ByteArray)```
-* ```fun fromByteArray(byteArray: ByteArray, offset: Int)```
-* ```fun fromByteArray(byteArray: ByteArray, offset: Int, length: Int)```
-* ```fun fromInputStream(inputStream: InputStream)```
-* ```fun fromUri(uri: Uri, context: Context)```
-* ```fun fromUri(uri: Uri, context: Context, extension: String)```
-* ```fun fromUri(uri: Uri, contentResolver: ContentResolver)```
-* ```fun fromUri(uri: Uri, contentResolver: ContentResolver, extension: String)```
-* ```fun fromExtension(extension: String)```
-* ```fun fromName(name: String)```
+* `fun fromFile(file: File)`
+* `fun fromFile(file: File, context: Context)`
+* `fun fromFile(file: File, contentResolver: ContentResolver)`
+* `fun fromByteArray(byteArray: ByteArray)`
+* `fun fromByteArray(byteArray: ByteArray, offset: Int)`
+* `fun fromByteArray(byteArray: ByteArray, offset: Int, length: Int)`
+* `fun fromInputStream(inputStream: InputStream)`
+* `fun fromUri(uri: Uri, context: Context)`
+* `fun fromUri(uri: Uri, context: Context, extension: String)`
+* `fun fromUri(uri: Uri, contentResolver: ContentResolver)`
+* `fun fromUri(uri: Uri, contentResolver: ContentResolver, extension: String)`
+* `fun fromExtension(extension: String)`
+* `fun fromName(name: String)`
 
 #### Precision with fallback
 You get the most exact MimeType when reading bytes.
@@ -58,7 +58,7 @@ To get the most precise MimeType with a good fallback method, I recommend `fromF
 Less precise is `fromFile(file: File)` because it uses the MimeType that matches the extension as fallback.
 
 #### Recommended method
-```kotlin
+```java
 val file = File("path/to/file.extension")
 val mimeData = MimeData.fromFile(file, context)
 // or
@@ -75,7 +75,7 @@ Available for:
 * Uri
 
 Example:
-```kotlin
+```java
 val file = File("path/to/file.extension")
 val mimeData = file.getMimeData(context)
 // or
@@ -98,7 +98,7 @@ Available info:
 * isVideo: Boolean
 
 #### Full Example
-```kotlin
+```java
 val file = File("path/to/file.extension")
 val mimeData = MimeData.fromFile(file, context)
 
