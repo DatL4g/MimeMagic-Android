@@ -28,7 +28,7 @@ Add this line in your app build.gradle:
 ```gradle
 dependencies {
     ...
-    implementation("com.github.DatL4g:MimeMagic-Android:1.0")
+    implementation("com.github.DatL4g:MimeMagic-Android:1.0.1")
     ...
 }
 ```
