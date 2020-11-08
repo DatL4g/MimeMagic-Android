@@ -26,9 +26,17 @@ allprojects {
   ```
 Add this line in your app build.gradle:
 ```gradle
+plugins {
+    ...
+    id 'kotlin-android-extensions'
+    ...
+}
+
+...
+
 dependencies {
     ...
-    implementation("com.github.DatL4g:MimeMagic-Android:1.0.1")
+    implementation("com.github.DatL4g:MimeMagic-Android:1.0.2")
     ...
 }
 ```
@@ -58,7 +66,7 @@ To get the most precise MimeType with a good fallback method, I recommend `fromF
 Less precise is `fromFile(file: File)` because it uses the MimeType that matches the extension as fallback.
 
 #### Recommended method
-```java
+```kotlin
 val file = File("path/to/file.extension")
 val mimeData = MimeData.fromFile(file, context)
 // or
@@ -75,7 +83,7 @@ Available for:
 * Uri
 
 Example:
-```java
+```kotlin
 val file = File("path/to/file.extension")
 val mimeData = file.getMimeData(context)
 // or
@@ -98,7 +106,7 @@ Available info:
 * isVideo: Boolean
 
 #### Full Example
-```java
+```kotlin
 val file = File("path/to/file.extension")
 val mimeData = MimeData.fromFile(file, context)
 
