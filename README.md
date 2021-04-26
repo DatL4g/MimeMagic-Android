@@ -28,7 +28,7 @@ Add this line in your app build.gradle:
 ```gradle
 plugins {
     ...
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
     ...
 }
 
@@ -36,7 +36,7 @@ plugins {
 
 dependencies {
     ...
-    implementation("com.github.DatL4g:MimeMagic-Android:1.0.2")
+    implementation("com.github.DatL4g:MimeMagic-Android:1.0.3")
     ...
 }
 ```
@@ -89,6 +89,11 @@ val mimeData = file.getMimeData(context)
 // or
 val mimeData = file.getMimeData(context.contentResolver)
 ```
+
+#### InputStream
+As stated before this method may be more precise and is more likely to fail.
+Another hint is that the InputStream will be closed afterwards.
+You won't experience anything when using `fromFile` or `fromByteArray` but make sure you don't use the InputStream after calling `fromInputStream`.
 
 #### Handling MimeData Information
 Available info:

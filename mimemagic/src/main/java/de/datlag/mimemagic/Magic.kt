@@ -14,10 +14,18 @@ import java.util.*
 internal object Magic {
 
     fun guessContentType(inputStream: InputStream): String? {
+        val bufferedStream = if (inputStream is BufferedInputStream) inputStream else BufferedInputStream(inputStream)
         return try {
-            URLConnection.guessContentTypeFromStream(if (inputStream is BufferedInputStream) inputStream else BufferedInputStream(inputStream))
+            URLConnection.guessContentTypeFromStream(bufferedStream)
         } catch (ignored: Exception) {
             null
+        } finally {
+            try {
+                bufferedStream.close()
+            } catch (ignore: Exception) { }
+            try {
+                inputStream.close()
+            } catch (ignore: Exception) { }
         }
     }
 
